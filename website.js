@@ -5,6 +5,7 @@ const getComputerChoice = () => {
     return choices[randomChoice];
 }
 
+// add comentario 
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection == "rock" && computerSelection == "paper") {
