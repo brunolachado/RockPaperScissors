@@ -41,19 +41,20 @@ function playRound(playerSelection, computerSelection) {
 let playerScore = 0;
 let computerScore = 0;
 
-prompt("Rock, Paper, Scissors").toLowerCase();
-
 //Valors da ronda vao para estas variaveis 
 const playerSelection = "";
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
 
-function playGame(roundsLeft) {
-    if (roundsLeft === 0) {
-        return "Game over!";
-        return "Player Score", playerScore;
-        return "Computer Score", computerScore;
-    }
-    playGame(roundsLeft - 1);
+const rockButtom = document.querySelector("#rock");
+rockButtom.addEventListener("click"), () => {
+    playRound("rock");
 }
-playGame(5);
+const paperButtom = document.querySelector("#paper");
+paperButtom.addEventListener("click"), () => {
+    playRound("paper");
+}
+const scissorsButtom = document.querySelector("#scissors");
+scissorsButtom.addEventListener("click"), () => {
+    playRound("scissors");
+}
